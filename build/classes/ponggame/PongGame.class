@@ -22,7 +22,7 @@ public class PongGame extends JComponent implements ActionListener, MouseMotionL
     int ballSpeedY = 10;
     int paddleX;
     int hits = 0;
-    public static int promptX = 800;
+    public static int promptX = 820;
     public static int promptY = 600;
     public static Font font1;
     public static Font font2;
@@ -37,7 +37,7 @@ public class PongGame extends JComponent implements ActionListener, MouseMotionL
         
        //Background
        g.setColor(new Color(178,223,224));
-       g.fillRect(0, 0, 800, 600);
+       g.fillRect(0, 0, 820, 620);
        
        g.setColor(new Color(245, 227, 27));
        g.fillOval(300, 50, 100, 100);
@@ -71,6 +71,7 @@ public class PongGame extends JComponent implements ActionListener, MouseMotionL
         window.pack();
         window.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         window.setLocationRelativeTo(null);
+        window.setResizable(false);
         window.setVisible(true);
         
         //Score Board font
